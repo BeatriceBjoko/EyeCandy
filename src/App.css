@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	background-color: #faf9f7;
+	color: #111;
+	font-family: "Inter", sans-serif;
+	overflow-x: hidden;
+}
+
+.app {
+	min-height: 200vh;
+	position: relative;
+}
+
+.mellow,
+.juice {
+	position: fixed;
+	font-size: clamp(3rem, 10vw, 10rem);
+	font-weight: 700;
+	line-height: 0.9;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+
+.mellow {
+	top: 8vh;
+	left: 6vw;
+}
+
+.juice {
+	right: 6vw;
+	bottom: 8vh;
+	text-align: right;
+}
