@@ -11,7 +11,7 @@ export function textIntro(target) {
 			y: 0,
 			opacity: 1,
 			rotate: 0,
-			stagger: 0.05,
+			stagger: 0.11,
 			ease: "power3.out",
 			duration: 1.3,
 		}

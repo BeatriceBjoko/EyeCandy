@@ -1,12 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { textIntro } from "../animations/textIntro";
 
-export default function SplitText({ text, className = "" }) {
+export default function SplitText({ text, className = "", trigger = true }) {
 	const ref = useRef(null);
 
 	useEffect(() => {
-		textIntro(ref.current);
-	}, []);
+		if (trigger && ref.current) {
+			textIntro(ref.current, className);
+		}
+	}, [trigger]);
 
 	return (
 		<div ref={ref} className={`split-text ${className}`}>
